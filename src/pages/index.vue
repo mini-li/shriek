@@ -1,5 +1,7 @@
 <template>
-  <HelloWorld />
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 <script lang="ts" setup>
