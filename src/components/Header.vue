@@ -1,21 +1,19 @@
 <template>
-  
-  <v-container class="bg-surface-variant">
-    <v-row no-gutters>
-      <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
-        </v-sheet>
-      </v-col>
-      <v-col>
-        <v-sheet class="pa-2 ma-2">
-          .v-col-auto
-        </v-sheet>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-app-bar :elevation="2">
+    <template v-slot:prepend>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    </template>
 
- 
+    <v-app-bar-title>Application Bar</v-app-bar-title>
+
+    <template v-slot:append>
+      <v-btn icon="mdi-heart"></v-btn>
+
+      <v-btn icon="mdi-magnify"></v-btn>
+
+      <v-btn icon="mdi-dots-vertical"></v-btn>
+    </template>
+  </v-app-bar>
 </template>
 
 <script setup lang="ts">
