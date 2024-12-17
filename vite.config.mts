@@ -11,6 +11,15 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:"shriek",
+  build: {
+    outDir: './dist', // 指定输出目录为 "./dist"
+    assetsDir: './assets', // 指定静态文件引入路径为 "./assets"    
+    sourcemap: false, // 不生成 sourceMap 文件
+    minify: 'terser', // 使用 terser 进行代码压缩
+    chunkSizeWarningLimit: 2000, // 设置 chunk 大小警告的限制为 2000 KiB
+    emptyOutDir: false, // 在构建之前清空输出目录
+  },
   plugins: [
     VueRouter(),
     Vue({

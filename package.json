@@ -12,6 +12,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
+    "@cloudbase/cli": "^2.5.0",
     "@mdi/font": "7.4.47",
     "core-js": "^3.37.1",
     "roboto-fontface": "*",

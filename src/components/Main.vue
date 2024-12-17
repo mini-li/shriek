@@ -16,9 +16,9 @@
       <v-tabs-window-item :key="1" :value="1"> 
         <v-carousel>
           <v-carousel-item 
-            v-for="i in 8"
-            :key="i"
-            :src="`src/assets/${i}.jpg`"
+            v-for="i in tab"
+            :key="i.key"
+            :src="i.url"
             cover
           ></v-carousel-item>
         </v-carousel>
@@ -56,9 +56,29 @@
 </template>
 
 <script>
+  import img_1 from "@/assets/1.jpg";
+  import img_2 from "@/assets/2.jpg";
+  import img_3 from "@/assets/3.jpg";
+  import img_4 from "@/assets/4.jpg";
+  import img_5 from "@/assets/5.jpg";
+  import img_6 from "@/assets/6.jpg";
+  import img_7 from "@/assets/7.jpg";
+  import img_8 from "@/assets/8.jpg";
+
   export default {
     data: () => ({
-      tab: null,
+      tab: [
+      {img:img_1,key:"1"},
+      {img:img_2,key:"2"},
+      {img:img_3,key:"3"},
+      {img:img_4,key:"4"},
+      {img:img_5,key:"5"},
+      {img:img_6,key:"6"},
+      {img:img_7,key:"7"},
+      {img:img_8,key:"8"},
+ 
+
+    ]
     }),
   }
 </script>
