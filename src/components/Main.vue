@@ -51,7 +51,13 @@
       </v-tabs-window-item> -->
     </v-tabs-window>
   </v-card>
-
+  v-container
+  <v-img
+    :width="300"
+    aspect-ratio="16/9"
+    cover
+    :src="img_1"
+  ></v-img>
  
 </template>
 
