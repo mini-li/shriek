@@ -1,7 +1,10 @@
 <template>
-  <Header />
-  <Main />
-  <Footer />
+
+<Header />
+<Main />
+<Footer />
+
+  
 </template>
 
 <script lang="ts" setup>

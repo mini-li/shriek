@@ -14,13 +14,15 @@
 
     <v-tabs-window v-model="tab">
       <v-tabs-window-item :key="1" :value="1"> 
-        <v-carousel>
-          <v-carousel-item 
-            v-for="i in tab"
-            :key="i.key"
-            :src="i.url"
-            cover
-          ></v-carousel-item>
+        <v-carousel show-arrows="hover">
+          <v-carousel-item  src="@/assets/1.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/2.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/3.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/4.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/5.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/6.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/7.jpg"   cover></v-carousel-item>
+          <v-carousel-item  src="@/assets/8.jpg"   cover></v-carousel-item>
         </v-carousel>
       </v-tabs-window-item>
       <v-tabs-window-item :key="2" :value="2"> <h1>主营业务</h1> </v-tabs-window-item>
@@ -51,12 +53,12 @@
       </v-tabs-window-item> -->
     </v-tabs-window>
   </v-card>
-  v-container
+  
   <v-img
     :width="300"
     aspect-ratio="16/9"
     cover
-    :src="img_1"
+    src="@/assets/1.jpg"
   ></v-img>
  
 </template>
